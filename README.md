@@ -1,3 +1,18 @@
+## Custom Sage Theme Installation
+
+Install Sage using Composer from your WordPress themes directory 
+
+Open terminal In Your Theme Directory
+
+```sh
+# wp-content/themes/Sage_Starter
+composer install
+yarn 
+yarn build
+```
+
+Start Using This Custom Theme
+# Sage
 <p align="center">
   <a href="https://roots.io/sage/">
     <img alt="Sage" src="https://cdn.roots.io/app/uploads/logo-sage.svg" height="100">
