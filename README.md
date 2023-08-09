@@ -1,15 +1,24 @@
 ## Custom Sage Theme Installation
 
-Install Sage using Composer from your WordPress themes directory 
+Install Sage using Composer from your WordPress themes directory
 
-Open terminal In Your Theme Directory
+- Change proxy and setpublicpath in bud.config.js
 
-```sh
-# wp-content/themes/Sage_Starter
-composer install
-yarn 
-yarn build
-```
+  ```javascript
+    .proxy('http://localhost/wp_sage')
+    .setPublicPath('/wp_sage/wp-content/themes/sage_starter/public/')
+  ```
+
+  Change These two to your relevant
+
+- Open terminal In Your Theme Directory
+
+  ```sh
+  # wp-content/themes/Sage_Starter
+  composer install
+  yarn
+  yarn build
+  ```
 
 Start Using This Custom Theme
 # Sage
