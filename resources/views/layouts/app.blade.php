@@ -4,14 +4,12 @@
 
 @include('sections.header')
 
-  <main id="main" class="main">
+  <div id="main" class="main">
     @yield('content')
-  </main>
+  </div>
 
   @hasSection('sidebar')
-    <aside class="sidebar">
-      @yield('sidebar')
-    </aside>
+    @yield('sidebar')
   @endif
 
 @include('sections.footer')

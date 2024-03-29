@@ -15,10 +15,7 @@ export default async (app) => {
   app
     .entry({
       app: ['@scripts/app', '@styles/app'],
-      browser: ['@scripts/browser.min.js'],
-      breakpoints:['@scripts/breakpoints.min.js'],
-      util: ['@scripts/util.js'],
-      main: ['@scripts/main.js', '@styles/main'],
+      main: ['@styles/main'],
       editor: ['@scripts/editor', '@styles/editor'],
     })
 
