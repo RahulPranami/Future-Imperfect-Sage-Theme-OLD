@@ -15,6 +15,10 @@ export default async (app) => {
   app
     .entry({
       app: ['@scripts/app', '@styles/app'],
+      browser: ['@scripts/browser.min.js'],
+      breakpoints:['@scripts/breakpoints.min.js'],
+      util: ['@scripts/util.js'],
+      main: ['@scripts/main.js', '@styles/main'],
       editor: ['@scripts/editor', '@styles/editor'],
     })
 
@@ -34,19 +38,19 @@ export default async (app) => {
      * Proxy origin (`WP_HOME`)
      * @see {@link https://bud.js.org/docs/bud.proxy/}
      */
-    .proxy('http://localhost/wp_sage')
+    .proxy('http://192.168.2.146/~rahul.prnami/sage/')
 
     /**
      * Development origin
      * @see {@link https://bud.js.org/docs/bud.serve/}
      */
-    .serve('http://0.0.0.0:3000')
+    .serve('http://192.168.2.146/~rahul.prnami/sage/')
 
     /**
      * URI of the `public` directory
      * @see {@link https://bud.js.org/docs/bud.setPublicPath/}
      */
-    .setPublicPath('/wp_sage/wp-content/themes/sage_starter/public/')
+    .setPublicPath('/~rahul.prnami/sage/wp-content/themes/sage_starter/public/')
 
     /**
      * Generate WordPress `theme.json`

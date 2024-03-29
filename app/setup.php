@@ -15,6 +15,10 @@ use function Roots\bundle;
  */
 add_action('wp_enqueue_scripts', function () {
     bundle('app')->enqueue();
+    bundle('browser')->enqueue();
+    bundle('breakpoints')->enqueue();
+    bundle('util')->enqueue();
+    bundle('main')->enqueue();
 }, 100);
 
 /**
